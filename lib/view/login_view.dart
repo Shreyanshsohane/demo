@@ -116,7 +116,6 @@ class _LoginViewState extends State<LoginView> {
                   //   'email' : 'eve.holt@reqres.in',
                   //   'password' : 'cityslicka',
                   // };
-
                   authViewModel.loginApi(data , context);
                   print('api hit');
                 }

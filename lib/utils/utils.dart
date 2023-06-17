@@ -18,17 +18,6 @@ class Utils {
     FocusScope.of(context).requestFocus(nextFocus);
   }
 
-
-
-  // static toastMessage(String message){
-  //   Fluttertoast.showToast(
-  //       msg: message,
-  //   backgroundColor: Colors.black,
-  //     textColor: Colors.white,
-
-  //   );
-  // }
-
   static void flushBarErrorMessage(String message, BuildContext context){
 
     showFlushbar(context: context,

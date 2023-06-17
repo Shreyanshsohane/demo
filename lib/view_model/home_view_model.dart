@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart';
 
 class HomeViewViewModel with ChangeNotifier {
 
-  final _myRepo = HomeRepository();
+  final _homeRepo = HomeRepository();
 
   ApiResponse<MovieListModel> moviesList = ApiResponse.loading();
 
@@ -21,7 +21,7 @@ class HomeViewViewModel with ChangeNotifier {
 
     setMoviesList(ApiResponse.loading());
 
-    _myRepo.fetchMoviesList().then((value){
+    _homeRepo.fetchMoviesList().then((value){
 
       setMoviesList(ApiResponse.completed(value));
 
